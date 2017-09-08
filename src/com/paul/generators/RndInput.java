@@ -4,8 +4,9 @@ import java.util.Random;
 
 public class RndInput {
 
-  public String generate(int length) {
-    final Random r = new Random(0xFACE);
+  //Main 0xFACE, second 0xFEED
+  public String generate(int length, int seed) {
+    final Random r = new Random(seed);
     
     String s = "";
 

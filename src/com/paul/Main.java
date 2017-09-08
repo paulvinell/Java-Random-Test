@@ -8,7 +8,7 @@ import com.paul.generators.TrueRndInput;
 public class Main {
 
   public static void main(String[] args) {
-    Analyzer a = new Analyzer(new HumanInput().generate());
+    Analyzer a = new Analyzer(new RndInput().generate(3000, 0xFACE));
 
     for (int size = 1; size <= 6; size++) {
       a.run(size);
